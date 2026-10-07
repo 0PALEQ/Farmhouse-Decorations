@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/tool_board"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/tool_board",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/tool_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/tool_board",
+      "y": 270
+    }
+  }
+}

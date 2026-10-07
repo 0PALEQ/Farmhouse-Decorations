@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-door_mat",
+  "textures": {
+    "all": "farmhouse_decorations:block/door_mat",
+    "particle": "farmhouse_decorations:block/door_mat",
+    "0": "farmhouse_decorations:block/door_mat"
+  },
+  "render_type": "solid"
+}

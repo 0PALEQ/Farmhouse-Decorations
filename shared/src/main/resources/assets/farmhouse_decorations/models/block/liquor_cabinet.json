@@ -1,0 +1,15 @@
+{
+  "parent": "farmhouse_decorations:custom/liqour-cabinet",
+  "textures": {
+    "all": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/liqour-cabinet-texture-cutout",
+    "2": "farmhouse_decorations:block/wine-bottle-red-cutout",
+    "3": "farmhouse_decorations:block/wine-bottle-cutout",
+    "4": "farmhouse_decorations:block/wine-glass-texture-cutout",
+    "4_0": "farmhouse_decorations:block/doniczkaigalezie",
+    "4_1": "farmhouse_decorations:block/tinyleaves"
+  },
+  "render_type": "cutout"
+}

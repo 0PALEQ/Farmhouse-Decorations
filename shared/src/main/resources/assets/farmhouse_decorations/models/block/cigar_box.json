@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-cigar-box",
+  "textures": {
+    "all": "farmhouse_decorations:block/cigar-box-texture",
+    "particle": "farmhouse_decorations:block/cigar-box-texture",
+    "1": "farmhouse_decorations:block/stripped_mangrove_log_side",
+    "2": "farmhouse_decorations:block/cigar-box-texture"
+  },
+  "render_type": "solid"
+}

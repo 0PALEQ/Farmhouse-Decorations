@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/antique_oven",
+  "textures": {
+    "all": "farmhouse_decorations:block/oven-texture",
+    "particle": "farmhouse_decorations:block/oven-texture",
+    "0": "farmhouse_decorations:block/oven-texture"
+  },
+  "render_type": "solid"
+}

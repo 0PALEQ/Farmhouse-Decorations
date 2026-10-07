@@ -1,0 +1,12 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-sink",
+  "textures": {
+    "all": "farmhouse_decorations:block/kitchen-sink",
+    "particle": "farmhouse_decorations:block/kitchen-sink",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/stripped_dark_oak_log",
+    "2": "farmhouse_decorations:block/kitchen-counters",
+    "3": "farmhouse_decorations:block/kitchen-sink"
+  },
+  "render_type": "solid"
+}

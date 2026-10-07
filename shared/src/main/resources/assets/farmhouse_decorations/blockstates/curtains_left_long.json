@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "farmhouse_decorations:block/curtains_left_long" },
+    "facing=east": { "model": "farmhouse_decorations:block/curtains_left_long", "y": 90 },
+    "facing=south": { "model": "farmhouse_decorations:block/curtains_left_long", "y": 180 },
+    "facing=west": { "model": "farmhouse_decorations:block/curtains_left_long", "y": 270 }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-radio",
+  "textures": {
+    "all": "farmhouse_decorations:block/radio-panel",
+    "particle": "farmhouse_decorations:block/radio-panel",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/radio-texture",
+    "2": "farmhouse_decorations:block/radio-panel"
+  },
+  "render_type": "solid"
+}

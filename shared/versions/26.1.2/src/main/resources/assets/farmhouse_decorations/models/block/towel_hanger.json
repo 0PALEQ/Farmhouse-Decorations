@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-towel-hanger",
+  "textures": {
+    "all": "farmhouse_decorations:block/bathroom-towel-hanger",
+    "particle": "farmhouse_decorations:block/bathroom-towel-hanger",
+    "0": "farmhouse_decorations:block/bathroom-towel-hanger"
+  },
+  "render_type": "solid"
+}

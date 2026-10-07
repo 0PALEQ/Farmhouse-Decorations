@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-mirror-big",
+  "textures": {
+    "all": "farmhouse_decorations:block/mirror-big-texture",
+    "particle": "farmhouse_decorations:block/mirror-big-texture",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/mirror-big-texture"
+  },
+  "render_type": "solid"
+}

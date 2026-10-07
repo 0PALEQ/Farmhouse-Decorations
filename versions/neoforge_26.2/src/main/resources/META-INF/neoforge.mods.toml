@@ -1,0 +1,24 @@
+license="All Rights Reserved"
+
+[[mods]]
+modId="farmhouse_decorations"
+version="${version}"
+displayName="Farmhouse Decorations"
+displayURL="https://cookiecraftmods.com"
+logoFile="logo.png"
+authors="opaleq, Lineariem - Cookiecraft Mods"
+description='''Farmhouse furniture and decorations for your home'''
+
+[[dependencies.farmhouse_decorations]]
+modId="neoforge"
+type="required"
+versionRange="[26.2,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.farmhouse_decorations]]
+modId="minecraft"
+type="required"
+versionRange="[26.2]"
+ordering="NONE"
+side="BOTH"

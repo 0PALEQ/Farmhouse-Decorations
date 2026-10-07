@@ -1,0 +1,13 @@
+{
+  "parent": "farmhouse_decorations:custom/tool-wall",
+  "textures": {
+    "all": "farmhouse_decorations:block/spanner-texture",
+    "particle": "farmhouse_decorations:block/spanner-texture",
+    "0": "farmhouse_decorations:block/hand-saw",
+    "1": "farmhouse_decorations:block/tool-wall-texture",
+    "2": "farmhouse_decorations:block/spanner-texture",
+    "4": "farmhouse_decorations:block/screwdriver",
+    "5": "farmhouse_decorations:block/table-top"
+  },
+  "render_type": "solid"
+}

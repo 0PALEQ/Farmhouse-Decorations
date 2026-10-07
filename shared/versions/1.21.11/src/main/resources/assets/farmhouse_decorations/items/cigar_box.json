@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "type":  "minecraft:model",
+                  "model":  "farmhouse_decorations:item/cigar_box"
+              }
+}

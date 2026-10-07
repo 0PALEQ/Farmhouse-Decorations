@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/bookshelf",
+  "textures": {
+    "all": "farmhouse_decorations:block/bookshelf-texture-cutout",
+    "particle": "farmhouse_decorations:block/bookshelf-texture-cutout",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/bookshelf-texture-cutout",
+    "2": "farmhouse_decorations:block/bookshelf-books-texture"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "result": {
+    "id": "farmhouse_decorations:big_bathroom_mirror",
+    "count": 1
+  }
+}

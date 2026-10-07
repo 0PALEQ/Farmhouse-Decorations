@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-counter-drawers",
+  "textures": {
+    "all": "farmhouse_decorations:block/kitchen-counters",
+    "particle": "farmhouse_decorations:block/kitchen-counters",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/kitchen-counters",
+    "3": "farmhouse_decorations:block/stripped_dark_oak_log"
+  },
+  "render_type": "solid"
+}

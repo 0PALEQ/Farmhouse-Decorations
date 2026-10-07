@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-typewriter",
+  "textures": {
+    "all": "farmhouse_decorations:block/typewriter",
+    "particle": "farmhouse_decorations:block/typewriter",
+    "0": "farmhouse_decorations:block/typewriter"
+  },
+  "render_type": "solid"
+}

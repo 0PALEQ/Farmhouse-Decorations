@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/ancient_tv"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/ancient_tv",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/ancient_tv",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/ancient_tv",
+      "y": 270
+    }
+  }
+}

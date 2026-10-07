@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "farmhouse_decorations:block/wall_telephone" },
+    "facing=east": { "model": "farmhouse_decorations:block/wall_telephone", "y": 90 },
+    "facing=south": { "model": "farmhouse_decorations:block/wall_telephone", "y": 180 },
+    "facing=west": { "model": "farmhouse_decorations:block/wall_telephone", "y": 270 }
+  }
+}

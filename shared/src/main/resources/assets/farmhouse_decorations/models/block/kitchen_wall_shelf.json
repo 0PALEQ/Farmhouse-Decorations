@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-wall-shelf-decorated",
+  "textures": {
+    "all": "farmhouse_decorations:block/kitchen-counters",
+    "particle": "farmhouse_decorations:block/kitchen-counters",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/china",
+    "2": "farmhouse_decorations:block/cup"
+  },
+  "render_type": "solid"
+}

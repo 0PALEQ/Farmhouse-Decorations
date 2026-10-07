@@ -1,0 +1,8 @@
+{
+  "parent": "farmhouse_decorations:custom/liqour-cabinet-glass",
+  "textures": {
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/liqour-cabinet-texture"
+  },
+  "render_type": "translucent"
+}

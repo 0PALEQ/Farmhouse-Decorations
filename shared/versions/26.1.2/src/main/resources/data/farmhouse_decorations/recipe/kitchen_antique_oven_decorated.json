@@ -1,0 +1,8 @@
+{
+    "type":  "minecraft:stonecutting",
+    "ingredient":  "#minecraft:logs",
+    "result":  {
+                   "id":  "farmhouse_decorations:kitchen_antique_oven_decorated",
+                   "count":  1
+               }
+}

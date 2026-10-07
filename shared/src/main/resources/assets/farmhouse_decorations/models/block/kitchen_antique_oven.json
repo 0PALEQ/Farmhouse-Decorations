@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-antique-oven",
+  "textures": {
+    "all": "farmhouse_decorations:block/kitchen-counters",
+    "particle": "farmhouse_decorations:block/kitchen-counters",
+    "5_0": "farmhouse_decorations:block/oven-texture"
+  },
+  "render_type": "solid"
+}

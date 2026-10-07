@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/kitchen_antique_oven_decorated"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/kitchen_antique_oven_decorated",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/kitchen_antique_oven_decorated",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/kitchen_antique_oven_decorated",
+      "y": 270
+    }
+  }
+}

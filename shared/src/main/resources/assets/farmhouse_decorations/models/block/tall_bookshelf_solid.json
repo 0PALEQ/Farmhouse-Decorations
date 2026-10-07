@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/bookshelf-solid",
+  "textures": {
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/bookshelf-books-texture"
+  },
+  "render_type": "cutout"
+}

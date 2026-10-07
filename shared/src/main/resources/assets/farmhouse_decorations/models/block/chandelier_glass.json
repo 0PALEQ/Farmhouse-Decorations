@@ -1,0 +1,7 @@
+{
+  "parent": "farmhouse_decorations:custom/chandelier-glass",
+  "textures": {
+    "4": "farmhouse_decorations:block/chandelier-glass"
+  },
+  "render_type": "translucent"
+}

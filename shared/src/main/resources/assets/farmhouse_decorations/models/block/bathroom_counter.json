@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-counter",
+  "textures": {
+    "all": "farmhouse_decorations:block/bathroom-sink",
+    "particle": "farmhouse_decorations:block/bathroom-sink",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/stone_diorite_smooth",
+    "2": "farmhouse_decorations:block/bathroom-sink"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+    "type":  "minecraft:stonecutting",
+    "ingredient":  "#minecraft:logs",
+    "result":  {
+                   "id":  "farmhouse_decorations:ancient_tv_with_legs",
+                   "count":  1
+               }
+}

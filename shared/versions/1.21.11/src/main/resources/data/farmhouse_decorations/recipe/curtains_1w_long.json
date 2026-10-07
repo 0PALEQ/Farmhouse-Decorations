@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "#minecraft:logs",
+  "result": {
+    "id": "farmhouse_decorations:curtains_1w_long",
+    "count": 1
+  }
+}

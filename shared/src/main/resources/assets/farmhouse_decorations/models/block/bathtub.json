@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-bathtub",
+  "textures": {
+    "all": "farmhouse_decorations:block/bathtub-texture",
+    "particle": "farmhouse_decorations:block/bathtub-texture",
+    "0": "farmhouse_decorations:block/bathtub-texture"
+  },
+  "render_type": "solid"
+}

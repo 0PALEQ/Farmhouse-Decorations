@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/kerosene_lantern",
+  "textures": {
+    "all": "farmhouse_decorations:block/lantern-texture",
+    "particle": "farmhouse_decorations:block/lantern-texture",
+    "0": "farmhouse_decorations:block/lantern-texture",
+    "1": "farmhouse_decorations:block/lantern-emisive"
+  },
+  "render_type": "solid"
+}

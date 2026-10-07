@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/rug_1x_3"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/rug_1x_3",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/rug_1x_3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/rug_1x_3",
+      "y": 270
+    }
+  }
+}

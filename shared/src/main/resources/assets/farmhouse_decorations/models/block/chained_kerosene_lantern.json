@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/kerosene-lantern-chain",
+  "textures": {
+    "all": "farmhouse_decorations:block/lantern-emisive",
+    "particle": "farmhouse_decorations:block/lantern-emisive",
+    "2": "farmhouse_decorations:block/lantern-texture",
+    "3": "farmhouse_decorations:block/lantern-emisive"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/wine-glass",
+  "textures": {
+    "all": "farmhouse_decorations:block/wine-glass-texture",
+    "particle": "farmhouse_decorations:block/wine-glass-texture",
+    "0": "farmhouse_decorations:block/wine-glass-texture"
+  },
+  "render_type": "translucent"
+}

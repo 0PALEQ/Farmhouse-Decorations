@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/sofa-middle",
+  "textures": {
+    "all": "farmhouse_decorations:block/sofa-seat-texture",
+    "particle": "farmhouse_decorations:block/sofa-seat-texture",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/sofa-seat-texture"
+  },
+  "render_type": "solid"
+}

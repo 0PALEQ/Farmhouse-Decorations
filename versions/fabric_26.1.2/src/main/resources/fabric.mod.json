@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "farmhouse_decorations",
+  "version": "${version}",
+  "name": "Farmhouse Decorations",
+  "description": "Farmhouse furniture and decorations for your home",
+  "authors": [
+    "opaleq",
+    "Lineariem - Cookiecraft Mods"
+  ],
+  "contact": {
+    "homepage": "https://cookiecraftmods.com"
+  },
+  "license": "All Rights Reserved",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cookiecraftmods.farmhousedecorations.FarmhouseDecorationsMod"
+    ],
+    "client": [
+      "com.cookiecraftmods.farmhousedecorations.FarmhouseDecorationsClient"
+    ]
+  },
+  "depends": {
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabricloader": ">=0.18.4",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/nightstandl",
+  "textures": {
+    "all": "farmhouse_decorations:block/nightstand-texture",
+    "particle": "farmhouse_decorations:block/nightstand-texture",
+    "1": "farmhouse_decorations:block/nightstand-texture",
+    "2": "farmhouse_decorations:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

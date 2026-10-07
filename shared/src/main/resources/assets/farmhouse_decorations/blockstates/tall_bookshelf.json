@@ -1,0 +1,12 @@
+{
+  "multipart": [
+    { "when": { "facing": "north" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_solid" } },
+    { "when": { "facing": "north" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_glass" } },
+    { "when": { "facing": "east" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_solid", "y": 90 } },
+    { "when": { "facing": "east" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_glass", "y": 90 } },
+    { "when": { "facing": "south" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_solid", "y": 180 } },
+    { "when": { "facing": "south" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_glass", "y": 180 } },
+    { "when": { "facing": "west" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_solid", "y": 270 } },
+    { "when": { "facing": "west" }, "apply": { "model": "farmhouse_decorations:block/tall_bookshelf_glass", "y": 270 } }
+  ]
+}

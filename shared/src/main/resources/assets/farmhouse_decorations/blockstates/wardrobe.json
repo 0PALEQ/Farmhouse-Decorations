@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/wardrobe"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/wardrobe",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/wardrobe",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/wardrobe",
+      "y": 270
+    }
+  }
+}

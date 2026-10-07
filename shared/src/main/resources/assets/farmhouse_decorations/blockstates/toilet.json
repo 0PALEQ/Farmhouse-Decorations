@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "farmhouse_decorations:block/toilet" },
+    "facing=east": { "model": "farmhouse_decorations:block/toilet", "y": 90 },
+    "facing=south": { "model": "farmhouse_decorations:block/toilet", "y": 180 },
+    "facing=west": { "model": "farmhouse_decorations:block/toilet", "y": 270 }
+  }
+}

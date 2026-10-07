@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "farmhouse_decorations:block/hanging_shelf" },
+    "facing=east": { "model": "farmhouse_decorations:block/hanging_shelf", "y": 90 },
+    "facing=south": { "model": "farmhouse_decorations:block/hanging_shelf", "y": 180 },
+    "facing=west": { "model": "farmhouse_decorations:block/hanging_shelf", "y": 270 }
+  }
+}

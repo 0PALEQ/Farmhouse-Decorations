@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "farmhouse_decorations:block/cigar_box"
+    },
+    "facing=east": {
+      "model": "farmhouse_decorations:block/cigar_box",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "farmhouse_decorations:block/cigar_box",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "farmhouse_decorations:block/cigar_box",
+      "y": 270
+    }
+  }
+}

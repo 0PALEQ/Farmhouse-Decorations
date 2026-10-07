@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/acoustic-guitar",
+  "textures": {
+    "all": "farmhouse_decorations:block/acoustic-guitar",
+    "particle": "farmhouse_decorations:block/acoustic-guitar",
+    "0": "farmhouse_decorations:block/acoustic-guitar"
+  },
+  "render_type": "solid"
+}

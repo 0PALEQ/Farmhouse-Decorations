@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-old-fridge",
+  "textures": {
+    "all": "farmhouse_decorations:block/old-fridge",
+    "particle": "farmhouse_decorations:block/old-fridge",
+    "4": "farmhouse_decorations:block/old-fridge"
+  },
+  "render_type": "solid"
+}

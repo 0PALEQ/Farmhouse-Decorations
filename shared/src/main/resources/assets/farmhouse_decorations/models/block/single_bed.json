@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/bed-single",
+  "textures": {
+    "all": "farmhouse_decorations:block/bed-texture",
+    "particle": "farmhouse_decorations:block/bed-texture",
+    "1": "farmhouse_decorations:block/bed-texture",
+    "2": "farmhouse_decorations:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/dining_chair",
+  "textures": {
+    "all": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

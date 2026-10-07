@@ -1,0 +1,8 @@
+{
+    "type":  "minecraft:stonecutting",
+    "ingredient":  "#minecraft:logs",
+    "result":  {
+                   "id":  "farmhouse_decorations:sofa_left",
+                   "count":  1
+               }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-seasoning_rack-solid",
+  "textures": {
+    "particle": "minecraft:block/stripped_dark_oak_log",
+    "2": "minecraft:block/stripped_dark_oak_log",
+    "3": "minecraft:block/brown_concrete_powder",
+    "4": "minecraft:block/green_concrete_powder",
+    "5": "minecraft:block/black_concrete_powder",
+    "6": "minecraft:block/orange_concrete_powder",
+    "7": "minecraft:block/white_concrete_powder"
+  },
+  "render_type": "cutout"
+}

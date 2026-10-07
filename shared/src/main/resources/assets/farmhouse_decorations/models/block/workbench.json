@@ -1,0 +1,13 @@
+{
+  "parent": "farmhouse_decorations:custom/workbench",
+  "textures": {
+    "all": "farmhouse_decorations:block/table-top-worn",
+    "particle": "farmhouse_decorations:block/table-top-worn",
+    "1": "farmhouse_decorations:block/table-top-worn",
+    "2": "farmhouse_decorations:block/bench-vise-texture",
+    "3": "farmhouse_decorations:block/toolbox-texture",
+    "4": "farmhouse_decorations:block/box-of-screws-texture",
+    "5": "farmhouse_decorations:block/table-top"
+  },
+  "render_type": "solid"
+}

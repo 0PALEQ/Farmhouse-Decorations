@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-cabinet",
+  "textures": {
+    "all": "farmhouse_decorations:block/bathroom-cabinet-stuff",
+    "particle": "farmhouse_decorations:block/bathroom-cabinet-stuff",
+    "0": "farmhouse_decorations:block/glass_gray-cutout",
+    "1": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/bathroom-cabinet-stuff"
+  },
+  "render_type": "cutout"
+}

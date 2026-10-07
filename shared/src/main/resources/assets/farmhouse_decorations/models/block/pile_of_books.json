@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-book_pile",
+  "textures": {
+    "all": "farmhouse_decorations:block/book-green",
+    "particle": "farmhouse_decorations:block/book-green",
+    "0": "farmhouse_decorations:block/book-red",
+    "1": "farmhouse_decorations:block/book-purple",
+    "2": "farmhouse_decorations:block/book-green"
+  },
+  "render_type": "solid"
+}

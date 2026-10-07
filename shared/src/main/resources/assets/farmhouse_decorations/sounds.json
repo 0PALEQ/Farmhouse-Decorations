@@ -1,0 +1,143 @@
+{
+  "guitar_break": {
+    "subtitle": "subtitles.guitar_break",
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar_break",
+        "stream": false
+      }
+    ]
+  },
+  "guitar_place": {
+    "subtitle": "subtitles.guitar_place",
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar_place",
+        "stream": false
+      }
+    ]
+  },
+  "cuckoo-clock": {
+    "subtitle": "subtitles.cuckoo-clock",
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:cuckoo-clock",
+        "stream": false
+      }
+    ]
+  },
+  "piano_break": {
+    "subtitle": "subtitles.piano_break",
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-break",
+        "stream": false
+      }
+    ]
+  },
+  "piano_place": {
+    "subtitle": "subtitles.piano_place",
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-place",
+        "stream": false
+      }
+    ]
+  },
+  "guitar-chord-1": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord1",
+        "stream": false
+      }
+    ]
+  },
+  "gc2": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-2",
+        "stream": false
+      }
+    ]
+  },
+  "gc3": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-3",
+        "stream": false
+      }
+    ]
+  },
+  "pc1": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-chord-1",
+        "stream": false
+      }
+    ]
+  },
+  "pc2": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-chord-2",
+        "stream": false
+      }
+    ]
+  },
+  "pc3": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-chord-3",
+        "stream": false
+      }
+    ]
+  },
+  "pc4": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:piano-chord-4",
+        "stream": false
+      }
+    ]
+  },
+  "gc4": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-4",
+        "stream": false
+      }
+    ]
+  },
+  "gc5": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-5",
+        "stream": false
+      }
+    ]
+  },
+  "gc6": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-6",
+        "stream": false
+      }
+    ]
+  },
+  "gc7": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:guitar-chord-7",
+        "stream": false
+      }
+    ]
+  },
+  "phone_place_break": {
+    "sounds": [
+      {
+        "name": "farmhouse_decorations:freesound_community-phone-dong-32767",
+        "stream": false
+      }
+    ]
+  }
+}

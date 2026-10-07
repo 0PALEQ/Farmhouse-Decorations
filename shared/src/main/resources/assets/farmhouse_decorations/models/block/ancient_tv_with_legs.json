@@ -1,0 +1,12 @@
+{
+  "parent": "farmhouse_decorations:custom/l.room-ancient_tv-legs",
+  "textures": {
+    "all": "farmhouse_decorations:block/ancient_tv-screen_off",
+    "particle": "farmhouse_decorations:block/ancient_tv-screen_off",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "minecraft:block/stripped_dark_oak_log",
+    "2": "farmhouse_decorations:block/ancient_tv-details",
+    "3": "farmhouse_decorations:block/ancient_tv-screen_off"
+  },
+  "render_type": "solid"
+}

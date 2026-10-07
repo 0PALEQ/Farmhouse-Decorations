@@ -1,0 +1,105 @@
+
+package com.cookiecraftmods.farmhousedecorations.init;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
+import com.cookiecraftmods.farmhousedecorations.FarmhouseDecorationsMod;
+
+public class FarmhouseDecorationsModTabs {
+	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FarmhouseDecorationsMod.MODID);
+	public static final RegistryObject<CreativeModeTab> FARMHOUSE_DECORATIONS = REGISTRY.register("farmhouse_decorations",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.farmhouse_decorations.farmhouse_decorations")).icon(() -> new ItemStack(FarmhouseDecorationsModBlocks.LIQUOR_CABINET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(FarmhouseDecorationsModBlocks.LIQUOR_CABINET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KEROSENE_LANTERN.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ACOUSTIC_GUITAR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DOUBLE_BED.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ANTIQUE_OVEN.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SINGLE_BED.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.TALL_BOOKSHELF.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WINE_BOTTLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.RED_WINE_BOTTLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CUCKOO_CLOCK.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DINING_CHAIR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DINING_TABLE_SIDE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DINING_TABLE_MIDDLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DRESSER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.NIGHT_STAND.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.PIANO.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.PIANO_WITH_STOOL.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ROCKING_CHAIR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ROUND_TABLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.STANDING_LAMP.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CHAINED_KEROSENE_LANTERN.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SOFA_LEFT.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SOFA_RIGHT.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SOFA_MIDDLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.TOOL_BOARD.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WARDROBE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.COAT_HANGER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WINE_GLASS.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WORKBENCH.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_ANTIQUE_OVEN.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_ANTIQUE_OVEN_DECORATED.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_COUNTER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_CORNER_CABINET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_DRAWERS.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_HALFWALL_SHELF.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_SINK.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_WALL_CABINET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_CORNER_WALL_CABINET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.KITCHEN_WALL_SHELF.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.BATHTUB.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.BATHROOM_CABINET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.BATHROOM_COUNTER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.BATHROOM_SINK.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.BIG_BATHROOM_MIRROR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SMALL_BATHROOM_MIRROR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.TOWEL_HANGER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.FRIDGE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.LAMP.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CIGAR_BOX.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.GRAMOPHONE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.RADIATOR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.PHONE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ANCIENT_TV_WITH_LEGS.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ANCIENT_TV.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.COFFEE_TABLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.PILE_OF_BOOKS.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DESK.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.DOOR_MAT.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SCREEN_CLOTH_1.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SCREEN_CLOTH_2.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SCREEN_WOOD_1.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SCREEN_WOOD_2.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.RADIO.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.RUG_1X_3.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.RUG_3X_3.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.SEASONING_RACK.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.TYPEWRITER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WALL_SHELF.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.ANCIENT_TV_STAND.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CEILING_LAMP.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CHANDELIER.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAIN_ROD.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_1W.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_1W_LONG.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_LEFT.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_LEFT_LONG.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_RIGHT.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.CURTAINS_RIGHT_LONG.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.HANGING_SHELF.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.OLD_BATHROOM_RADIATOR.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WALL_TELEPHONE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.TOILET.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WALL_LAMP_CANDLE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WALL_SHADE.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WINDOW_BLINDS.get().asItem());
+				tabData.accept(FarmhouseDecorationsModBlocks.WINDOW_BLINDS_LONG.get().asItem());
+			}).build());
+}

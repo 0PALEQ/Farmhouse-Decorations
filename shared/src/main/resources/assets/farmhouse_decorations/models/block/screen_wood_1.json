@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-partition-wood-v1",
+  "textures": {
+    "all": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "minecraft:block/stripped_dark_oak_log",
+    "2": "farmhouse_decorations:block/partition-hinge"
+  },
+  "render_type": "solid"
+}

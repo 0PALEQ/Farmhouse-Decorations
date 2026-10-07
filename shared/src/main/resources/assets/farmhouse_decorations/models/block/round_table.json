@@ -1,0 +1,10 @@
+{
+  "parent": "farmhouse_decorations:custom/round-table",
+  "textures": {
+    "all": "farmhouse_decorations:block/table-top",
+    "particle": "farmhouse_decorations:block/table-top",
+    "1": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/table-top"
+  },
+  "render_type": "solid"
+}

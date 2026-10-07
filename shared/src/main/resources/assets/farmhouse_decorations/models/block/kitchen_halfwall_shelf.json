@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/kitchen-halfwall-shelf",
+  "textures": {
+    "all": "farmhouse_decorations:block/kitchen-counters",
+    "particle": "farmhouse_decorations:block/kitchen-counters",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

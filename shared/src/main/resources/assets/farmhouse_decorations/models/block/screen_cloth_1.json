@@ -1,0 +1,11 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-partition-cloth-v1",
+  "textures": {
+    "all": "farmhouse_decorations:block/partition-cloth",
+    "particle": "farmhouse_decorations:block/partition-cloth",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/partition-hinge",
+    "3": "farmhouse_decorations:block/partition-cloth"
+  },
+  "render_type": "solid"
+}

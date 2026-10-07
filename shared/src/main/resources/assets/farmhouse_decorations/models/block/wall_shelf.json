@@ -1,0 +1,20 @@
+{
+  "parent": "farmhouse_decorations:custom/stuff-wall-shelf-double",
+  "textures": {
+    "all": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "particle": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/drawers-hardware",
+    "2": "farmhouse_decorations:block/book-red",
+    "3": "farmhouse_decorations:block/book-purple",
+    "4": "farmhouse_decorations:block/book-green",
+    "3_0": "farmhouse_decorations:block/doniczkaigalezie",
+    "3_1": "farmhouse_decorations:block/tinyleaves",
+    "5_0": "minecraft:block/cherry_log",
+    "5_1": "minecraft:block/bricks",
+    "6_0": "farmhouse_decorations:block/wine-bottle-red",
+    "5_2": "minecraft:block/coarse_dirt",
+    "5_3": "minecraft:block/cherry_leaves"
+  },
+  "render_type": "cutout"
+}

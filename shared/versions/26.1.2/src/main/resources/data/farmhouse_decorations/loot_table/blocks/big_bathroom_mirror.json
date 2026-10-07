@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "farmhouse_decorations:blocks/big_bathroom_mirror",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmhouse_decorations:big_bathroom_mirror"
+        }
+      ]
+    }
+  ]
+}

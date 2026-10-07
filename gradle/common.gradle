@@ -1,0 +1,72 @@
+import org.gradle.api.file.DuplicatesStrategy
+
+def rootPropertiesFile = file('../../gradle.properties')
+if (!rootPropertiesFile.isFile()) {
+    throw new GradleException("Missing root properties file: ${rootPropertiesFile}")
+}
+
+def rootProperties = new Properties()
+rootPropertiesFile.withInputStream { rootProperties.load(it) }
+
+def modVersion = rootProperties.getProperty('mod_version')
+def mavenGroup = rootProperties.getProperty('maven_group')
+def archivesBaseName = rootProperties.getProperty('archives_base_name')
+
+if (!modVersion || !mavenGroup || !archivesBaseName) {
+    throw new GradleException('Root gradle.properties must define mod_version, maven_group, and archives_base_name')
+}
+
+version = modVersion
+group = mavenGroup
+
+base {
+    archivesName = archivesBaseName
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir file('../../shared/src/main/resources')
+
+            def versionSharedResources = file("../../shared/versions/${project.minecraft_version}/src/main/resources")
+            if (versionSharedResources.isDirectory()) {
+                srcDir versionSharedResources
+            }
+        }
+    }
+}
+
+processResources {
+    inputs.property 'version', modVersion
+    duplicatesStrategy = DuplicatesStrategy.FAIL
+
+    filesMatching(['fabric.mod.json', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml']) {
+        expand(version: modVersion)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = Integer.parseInt(project.java_version)
+    if (project.findProperty('show_deprecations') == 'true') {
+        options.compilerArgs.add('-Xlint:deprecation')
+    }
+}
+
+def releaseJarName = "fdm-${modVersion}-${project.loader_name}-${project.minecraft_version}.jar"
+
+if (tasks.findByName('remapJar') != null) {
+    tasks.named('remapJar') {
+        archiveFileName = releaseJarName
+    }
+
+    // Loom's intermediary development jar is useful internally but should not
+    // be mixed with the distributable jar in build/libs.
+    tasks.named('jar') {
+        destinationDirectory = layout.buildDirectory.dir('devlibs')
+    }
+} else {
+    tasks.named('jar') {
+        archiveFileName = releaseJarName
+    }
+}

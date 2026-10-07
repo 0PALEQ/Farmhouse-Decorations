@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/bathroom-cabinet-solid",
+  "textures": {
+    "particle": "farmhouse_decorations:block/bathroom-cabinet-stuff",
+    "1": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "2": "farmhouse_decorations:block/bathroom-cabinet-stuff"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "tag": "minecraft:logs"
+  },
+  "result": {
+    "id": "farmhouse_decorations:red_wine_bottle",
+    "count": 1
+  }
+}

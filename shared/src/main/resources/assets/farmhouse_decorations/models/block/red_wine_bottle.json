@@ -1,0 +1,9 @@
+{
+  "parent": "farmhouse_decorations:custom/bottle-of-wine-red",
+  "textures": {
+    "all": "farmhouse_decorations:block/wine-bottle-red",
+    "particle": "farmhouse_decorations:block/wine-bottle-red",
+    "0": "farmhouse_decorations:block/wine-bottle-red"
+  },
+  "render_type": "solid"
+}

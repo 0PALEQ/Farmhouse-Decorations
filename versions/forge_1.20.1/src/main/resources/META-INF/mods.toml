@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="farmhouse_decorations"
+version="${version}"
+displayName="Farmhouse Decorations"
+displayURL="https://cookiecraftmods.com"
+logoFile="logo.png"
+authors="opaleq, Lineariem - Cookiecraft Mods"
+description="Farmhouse furniture and decorations for your home"
+
+[[dependencies.farmhouse_decorations]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
