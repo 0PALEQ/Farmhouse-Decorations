@@ -47,7 +47,7 @@ public abstract class SeatBlock extends Block {
 			if (seat == null && seats.isEmpty()) {
 				seat = new SeatArmorStand(world, pos.getX() + 0.5D, pos.getY() + seatHeight + RIDER_HEIGHT_CORRECTION, pos.getZ() + 0.5D);
 				seat.setNoGravity(true);
-				seat.setInvulnerable(true);
+				seat.setPermanentlyInvulnerable(true);
 				seat.setInvisible(true);
 				seat.addTag(SEAT_TAG);
 				world.addFreshEntity(seat);

@@ -1,8 +1,11 @@
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.17.14'
+    id 'net.fabricmc.fabric-loom' version '1.18.3'
 }
 
 apply from: '../../gradle/common.gradle'
+
+// The item definitions, recipes, and loot tables remain compatible with 26.3.
+sourceSets.main.resources.srcDir '../../shared/versions/26.2/src/main/resources'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(project.java_version))
 

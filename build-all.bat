@@ -21,6 +21,7 @@ call :build "fabric_1.21.1" "fdm-%MOD_VERSION%-fabric-1.21.1.jar" "21" || exit /
 call :build "fabric_1.21.11" "fdm-%MOD_VERSION%-fabric-1.21.11.jar" "21" || exit /b 1
 call :build "fabric_26.1.2" "fdm-%MOD_VERSION%-fabric-26.1.2.jar" "25" || exit /b 1
 call :build "fabric_26.2" "fdm-%MOD_VERSION%-fabric-26.2.jar" "25" || exit /b 1
+call :build "fabric_26.3" "fdm-%MOD_VERSION%-fabric-26.3.jar" "25" || exit /b 1
 call :build "forge_1.20.1" "fdm-%MOD_VERSION%-forge-1.20.1.jar" "17" || exit /b 1
 call :build "neoforge_1.21.1" "fdm-%MOD_VERSION%-neoforge-1.21.1.jar" "21" || exit /b 1
 call :build "neoforge_1.21.11" "fdm-%MOD_VERSION%-neoforge-1.21.11.jar" "21" || exit /b 1
