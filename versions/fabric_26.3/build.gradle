@@ -1,0 +1,23 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.14'
+}
+
+apply from: '../../gradle/common.gradle'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(Integer.parseInt(project.java_version))
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
