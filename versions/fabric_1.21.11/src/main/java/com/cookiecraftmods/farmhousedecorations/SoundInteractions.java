@@ -41,7 +41,7 @@ public final class SoundInteractions {
 	public static void tickCuckooClock(ServerLevel level, BlockPos pos) {
 		long timeOfDay = level.getDayTime() % 24000L;
 		if (timeOfDay == 6000L || timeOfDay == 18000L) {
-			level.playSound(null, pos, FarmhouseDecorationsModSounds.CUCKOO_CLOCK, SoundSource.BLOCKS, 1.0F, 1.0F);
+			level.playSound(null, pos, FarmhouseDecorationsModSounds.CUCKOO_CLOCK, SoundSource.BLOCKS, 0.5F, 1.0F);
 		}
 	}
 

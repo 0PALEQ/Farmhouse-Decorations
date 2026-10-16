@@ -25,12 +25,15 @@ import java.util.function.Function;
 import com.cookiecraftmods.farmhousedecorations.SoundInteractions;
 
 public class CuckooClockBlock extends Block {
+	// 0 = waiting, 1 = noon chimed, 2 = midnight chimed.
+	public static final net.minecraft.world.level.block.state.properties.IntegerProperty CHIMED =
+			net.minecraft.world.level.block.state.properties.IntegerProperty.create("chimed", 0, 2);
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public CuckooClockBlock(BlockBehaviour.Properties properties) {
 	super(properties.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(CHIMED, 0));
 	}
 
 	private Function<BlockState, VoxelShape> makeShapes() {
@@ -57,7 +60,7 @@ public class CuckooClockBlock extends Block {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, CHIMED);
 	}
 
 	@Override
@@ -76,7 +79,15 @@ public class CuckooClockBlock extends Block {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		SoundInteractions.tickCuckooClock(world, pos);
+		long timeOfDay = world.getDayTime() % 24000L;
+		int chimeTime = timeOfDay == 6000L ? 1 : timeOfDay == 18000L ? 2 : 0;
+		// Persist the latch so frozen time cannot retrigger after a chunk reload.
+		if (chimeTime != blockstate.getValue(CHIMED)) {
+			world.setBlock(pos, blockstate.setValue(CHIMED, chimeTime), Block.UPDATE_CLIENTS);
+			if (chimeTime != 0) {
+				SoundInteractions.tickCuckooClock(world, pos);
+			}
+		}
 		world.scheduleTick(pos, this, 1);
 	}
 
