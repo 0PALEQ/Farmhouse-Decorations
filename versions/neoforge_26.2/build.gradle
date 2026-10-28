@@ -33,3 +33,5 @@ neoForge {
         }
     }
 }
+
+apply from: '../../gradle/eqlib.gradle'

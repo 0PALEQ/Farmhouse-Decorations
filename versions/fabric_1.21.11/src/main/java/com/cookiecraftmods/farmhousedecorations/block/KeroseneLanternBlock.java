@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class KeroseneLanternBlock extends Block {
+public class KeroseneLanternBlock extends FurnitureBlock {
 	private static final VoxelShape SHAPE = box(6, 0, 6, 10, 8, 10);
 
 	public KeroseneLanternBlock(BlockBehaviour.Properties properties) {

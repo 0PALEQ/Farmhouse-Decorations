@@ -26,7 +26,15 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public final class FarmhouseDecorationsModBlocks {
+    static {
+        com.cookiecraftmods.eqlib.api.FurnitureApi.register(
+                "com.cookiecraftmods.farmhousedecorations.block.",
+                () -> FarmhouseDecorationsModBlocks.FURNITURE_PART.get(), state -> state.is(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK, net.minecraft.resources.Identifier.fromNamespaceAndPath("farmhouse_decorations", "sittable"))),
+                state -> net.minecraft.world.phys.Vec3.ZERO, (a, ap, b, bp) -> false);
+    }
+
     public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(FarmhouseDecorationsMod.MODID);
+    public static final DeferredBlock<Block> FURNITURE_PART = REGISTRY.registerBlock("furniture_part", com.cookiecraftmods.eqlib.block.FurniturePartBlock::new);
     public static final DeferredBlock<Block> LIQUOR_CABINET = REGISTRY.registerBlock("liquor_cabinet", LiquorCabinetBlock::new);
     public static final DeferredBlock<Block> KEROSENE_LANTERN = REGISTRY.registerBlock("kerosene_lantern", KeroseneLanternBlock::new);
     public static final DeferredBlock<Block> ACOUSTIC_GUITAR = REGISTRY.registerBlock("acoustic_guitar", AcousticGuitarBlock::new);
@@ -114,5 +122,13 @@ public final class FarmhouseDecorationsModBlocks {
     public static final DeferredBlock<Block> WINDOW_BLINDS = REGISTRY.registerBlock("window_blinds", WindowBlindsBlock::new);
     public static final DeferredBlock<Block> WINDOW_BLINDS_LONG = REGISTRY.registerBlock("window_blinds_long", WindowBlindsLongBlock::new);
     private FarmhouseDecorationsModBlocks() {
+    }
+
+    static {
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(DINING_CHAIR.getId(), 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(ROCKING_CHAIR.getId(), 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_LEFT.getId(), 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_MIDDLE.getId(), 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_RIGHT.getId(), 2.0);
     }
 }

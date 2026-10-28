@@ -18,7 +18,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class ScreenCloth1Block extends Block {
+public class ScreenCloth1Block extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public ScreenCloth1Block() {

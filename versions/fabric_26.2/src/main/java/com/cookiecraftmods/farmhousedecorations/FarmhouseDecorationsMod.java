@@ -14,6 +14,7 @@ public final class FarmhouseDecorationsMod implements net.fabricmc.api.ModInitia
 	public void onInitialize() {
 		FarmhouseDecorationsModSounds.init();
 		FarmhouseDecorationsModBlocks.init();
+        com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.init();
 		FarmhouseDecorationsModItems.init();
 		FarmhouseDecorationsModTabs.init();
 		RecipeSynchronization.synchronizeRecipeSerializer(StonecutterRecipe.SERIALIZER);

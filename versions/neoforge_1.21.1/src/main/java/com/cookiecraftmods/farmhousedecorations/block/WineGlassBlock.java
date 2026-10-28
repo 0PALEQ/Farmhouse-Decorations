@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 
-public class WineGlassBlock extends Block {
+public class WineGlassBlock extends FurnitureBlock {
 	private static final VoxelShape SHAPE = box(6, 0, 6, 10, 4, 10);
 
 	public WineGlassBlock() {

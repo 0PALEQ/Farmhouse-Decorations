@@ -19,7 +19,7 @@ import net.minecraft.core.BlockPos;
 
 import java.util.function.Function;
 
-public class ScreenWood1Block extends Block {
+public class ScreenWood1Block extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 

@@ -34,7 +34,15 @@ import com.cookiecraftmods.farmhousedecorations.block.*;
 import com.cookiecraftmods.farmhousedecorations.FarmhouseDecorationsMod;
 
 public class FarmhouseDecorationsModBlocks {
-	public static final Block LIQUOR_CABINET = register("liquor_cabinet", LiquorCabinetBlock::new);
+    static {
+        com.cookiecraftmods.eqlib.api.FurnitureApi.register(
+                "com.cookiecraftmods.farmhousedecorations.block.",
+                () -> FarmhouseDecorationsModBlocks.FURNITURE_PART, state -> state.is(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK, net.minecraft.resources.Identifier.fromNamespaceAndPath("farmhouse_decorations", "sittable"))),
+                state -> net.minecraft.world.phys.Vec3.ZERO, (a, ap, b, bp) -> false);
+    }
+
+	public static final Block FURNITURE_PART = register("furniture_part", com.cookiecraftmods.eqlib.block.FurniturePartBlock::new);
+    public static final Block LIQUOR_CABINET = register("liquor_cabinet", LiquorCabinetBlock::new);
 	public static final Block KEROSENE_LANTERN = register("kerosene_lantern", KeroseneLanternBlock::new);
 	public static final Block ACOUSTIC_GUITAR = register("acoustic_guitar", AcousticGuitarBlock::new);
 	public static final Block DOUBLE_BED = register("double_bed", DoubleBedBlock::new);
@@ -129,4 +137,12 @@ public class FarmhouseDecorationsModBlocks {
 		Block block = factory.apply(BlockBehaviour.Properties.of().setId(key));
 		return Registry.register(BuiltInRegistries.BLOCK, key, block);
 	}
+
+    static {
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(DINING_CHAIR, 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(ROCKING_CHAIR, 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_LEFT, 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_MIDDLE, 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_RIGHT, 2.0);
+    }
 }

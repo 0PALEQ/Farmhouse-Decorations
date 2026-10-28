@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CurtainsLeftBlock extends Block {
+public class CurtainsLeftBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public CurtainsLeftBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.WOOL).strength(1f, 10f).noOcclusion().isRedstoneConductor((state, getter, pos) -> false));

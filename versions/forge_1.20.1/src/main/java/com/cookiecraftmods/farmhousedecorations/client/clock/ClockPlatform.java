@@ -1,0 +1,44 @@
+package com.cookiecraftmods.farmhousedecorations.client.clock;
+
+import com.cookiecraftmods.eqlib.core.clock.ClockHandMesh;
+
+import com.cookiecraftmods.farmhousedecorations.block.entity.CuckooClockBlockEntity;
+import com.mojang.blaze3d.vertex.PoseStack;
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.resources.ResourceLocation;
+import java.io.IOException;
+
+final class ClockPlatform {
+    private ClockPlatform() {}
+
+    static long time(CuckooClockBlockEntity clock) {
+        return clock.getLevel().getDayTime();
+    }
+
+    private static ResourceLocation id(String path) { return new ResourceLocation("farmhouse_decorations", path); }
+
+    static RenderType layer(boolean wooden) {
+        return RenderType.entityCutout(id("textures/block/cuckoo-clock-texture.png"));
+    }
+
+    static CuckooClockHands loadHands() {
+        try (var reader = Minecraft.getInstance().getResourceManager()
+                .getResourceOrThrow(id("models/custom/cuckoo-clock.json")).openAsReader()) {
+            return CuckooClockHands.read(reader);
+        } catch (IOException exception) {
+            throw new IllegalStateException("Unable to load cuckoo clock hands", exception);
+        }
+    }
+
+    static void draw(ClockHandMesh hand, PoseStack.Pose pose, VertexConsumer vertices, int light) {
+        for (ClockHandMesh.Vertex v : hand.vertices()) {
+            vertices.vertex(pose.pose(), v.x(), v.y(), v.z()).color(255, 255, 255, 255)
+                    .uv(v.u(), v.v()).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(light)
+                    .normal(pose.normal(), v.nx(), v.ny(), v.nz()).endVertex();
+        }
+    }
+}
+

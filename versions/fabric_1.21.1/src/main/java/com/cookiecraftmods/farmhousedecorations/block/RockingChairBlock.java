@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 import com.google.common.collect.ImmutableMap;
 
-public class RockingChairBlock extends SeatBlock {
+public class RockingChairBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 

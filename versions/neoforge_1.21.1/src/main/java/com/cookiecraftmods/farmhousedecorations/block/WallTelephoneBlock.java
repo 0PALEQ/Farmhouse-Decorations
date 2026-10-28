@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class WallTelephoneBlock extends Block {
+public class WallTelephoneBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public WallTelephoneBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((state, getter, pos) -> false));

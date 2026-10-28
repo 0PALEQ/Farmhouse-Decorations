@@ -1,0 +1,39 @@
+def target = rootProject.projectDir.name
+def eqlibRoot = rootProject.file(providers.gradleProperty('eqlibDir')
+        .orElse(providers.environmentVariable('EQLIB_DIR'))
+        .getOrElse('../../../../opaleqsLibrary'))
+repositories {
+    maven { url = uri(providers.gradleProperty('eqlibMaven').getOrElse(new File(eqlibRoot, 'maven').absolutePath)) }
+}
+configurations { eqlibRuntime { transitive = false } }
+dependencies {
+    compileOnly "com.cookiecraftmods:eqlib:${eqlib_version}:dev-${target}"
+    eqlibRuntime "com.cookiecraftmods:eqlib:${eqlib_version}"
+    if (target.startsWith('fabric_')) runtimeOnly files(configurations.eqlibRuntime)
+}
+// Standalone verification programs use the named implementation without invoking a game loader.
+tasks.withType(JavaExec).configureEach {
+    if (!name.startsWith('run')) {
+        classpath += configurations.compileClasspath.filter { it.name.startsWith('eqlib-') }
+    }
+}
+if (!target.startsWith('fabric_')) {
+    def model = extensions.findByName('neoForge') ?: extensions.findByName('legacyForge')
+    if (model != null) model.runs.configureEach { systemProperty 'eqlib.development', 'true' }
+    else minecraft.runs.configureEach { property 'eqlib.development', 'true' }
+    // Resolve the final run directory after fixtures and consumers configure their runs.
+    gradle.projectsEvaluated {
+        def runNames = model != null ? model.runs.names : minecraft.runs.names
+        runNames.each { runName ->
+            def taskName = 'run' + runName.capitalize()
+            def directory = model != null ? model.runs.getByName(runName).gameDirectory
+                    : minecraft.runs.getByName(runName).workingDirectory
+            def install = tasks.register("installEqlibFor${taskName.capitalize()}", Copy) {
+                from configurations.eqlibRuntime
+                rename { 'eqlib-universal.jar' }
+                into model != null ? directory.map { it.dir('mods') } : new File(directory, 'mods')
+            }
+            tasks.matching { it.name == taskName }.configureEach { dependsOn install }
+        }
+    }
+}

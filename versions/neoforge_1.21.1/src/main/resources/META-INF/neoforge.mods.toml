@@ -24,3 +24,10 @@ type="required"
 versionRange="[1.21.1]"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.farmhouse_decorations]]
+modId="eqlib"
+type="required"
+versionRange="[1.0.3,)"
+ordering="AFTER"
+side="BOTH"

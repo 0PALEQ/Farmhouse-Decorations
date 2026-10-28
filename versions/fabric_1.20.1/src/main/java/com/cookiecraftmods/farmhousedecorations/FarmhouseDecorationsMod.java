@@ -18,6 +18,7 @@ public class FarmhouseDecorationsMod implements ModInitializer {
 	public void onInitialize() {
 		FarmhouseDecorationsModSounds.init();
 		FarmhouseDecorationsModBlocks.init();
+        com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.init();
 		FarmhouseDecorationsModItems.init();
 		FarmhouseDecorationsModTabs.init();
 	}

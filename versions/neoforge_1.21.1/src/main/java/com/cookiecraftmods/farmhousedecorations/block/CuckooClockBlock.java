@@ -24,7 +24,7 @@ import com.google.common.collect.ImmutableMap;
 
 import com.cookiecraftmods.farmhousedecorations.procedures.CuckooClockOnTickUpdateProcedure;
 
-public class CuckooClockBlock extends Block {
+public class CuckooClockBlock extends FurnitureBlock {
 	public static final net.minecraft.world.level.block.state.properties.IntegerProperty CHIMED =
 			net.minecraft.world.level.block.state.properties.IntegerProperty.create("chimed", 0, 2);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
@@ -97,4 +97,9 @@ public class CuckooClockBlock extends Block {
 			world.scheduleTick(pos, this, 1);
 		}
 	}
+
+    @Override
+    public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new com.cookiecraftmods.farmhousedecorations.block.entity.CuckooClockBlockEntity(pos, state);
+    }
 }

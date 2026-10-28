@@ -27,7 +27,7 @@ import com.google.common.collect.ImmutableMap;
 import com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModSounds;
 import com.cookiecraftmods.farmhousedecorations.procedures.PianoRightClickedProcedure;
 
-public class PianoBlock extends Block {
+public class PianoBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 

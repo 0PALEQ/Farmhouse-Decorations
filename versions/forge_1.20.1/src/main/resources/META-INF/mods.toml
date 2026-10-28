@@ -17,3 +17,10 @@ description="Farmhouse furniture and decorations for your home"
     versionRange="[1.20.1]"
     ordering="AFTER"
     side="BOTH"
+
+[[dependencies.farmhouse_decorations]]
+modId="eqlib"
+mandatory=true
+versionRange="[1.0.3,)"
+ordering="AFTER"
+side="BOTH"

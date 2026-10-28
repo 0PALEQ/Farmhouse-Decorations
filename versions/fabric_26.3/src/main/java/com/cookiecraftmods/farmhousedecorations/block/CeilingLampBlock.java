@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class CeilingLampBlock extends Block {
+public class CeilingLampBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	public CeilingLampBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(1f, 10f).lightLevel(state -> 15).noOcclusion().isRedstoneConductor((state, getter, pos) -> false));

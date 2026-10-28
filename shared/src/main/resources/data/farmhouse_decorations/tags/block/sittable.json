@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "farmhouse_decorations:dining_chair",
+    "farmhouse_decorations:rocking_chair",
+    "farmhouse_decorations:sofa_left",
+    "farmhouse_decorations:sofa_middle",
+    "farmhouse_decorations:sofa_right"
+  ]
+}

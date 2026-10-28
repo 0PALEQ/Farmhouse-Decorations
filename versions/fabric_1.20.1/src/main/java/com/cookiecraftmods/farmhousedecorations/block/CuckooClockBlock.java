@@ -24,7 +24,7 @@ import net.minecraft.core.BlockPos;
 
 import com.cookiecraftmods.farmhousedecorations.procedures.CuckooClockOnTickUpdateProcedure;
 
-public class CuckooClockBlock extends Block {
+public class CuckooClockBlock extends FurnitureBlock {
 	// 0 = waiting, 1 = noon chimed, 2 = midnight chimed.
 	public static final net.minecraft.world.level.block.state.properties.IntegerProperty CHIMED =
 			net.minecraft.world.level.block.state.properties.IntegerProperty.create("chimed", 0, 2);
@@ -104,4 +104,9 @@ public class CuckooClockBlock extends Block {
 		}
 		world.scheduleTick(pos, this, 1);
 	}
+
+    @Override
+    public net.minecraft.world.level.block.entity.BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new com.cookiecraftmods.farmhousedecorations.block.entity.CuckooClockBlockEntity(pos, state);
+    }
 }

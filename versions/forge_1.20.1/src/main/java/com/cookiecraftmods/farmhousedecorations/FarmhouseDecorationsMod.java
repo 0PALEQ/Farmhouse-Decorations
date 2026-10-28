@@ -43,6 +43,7 @@ public class FarmhouseDecorationsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		FarmhouseDecorationsModSounds.REGISTRY.register(bus);
 		FarmhouseDecorationsModBlocks.REGISTRY.register(bus);
+        com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.REGISTRY.register(bus);
 
 		FarmhouseDecorationsModItems.REGISTRY.register(bus);
 

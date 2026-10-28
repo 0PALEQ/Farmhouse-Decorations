@@ -1,6 +1,7 @@
 {
-  "ambientocclusion": false,
+  "format_version": "26.3",
   "credit": "Made with Blockbench",
+  "ambientocclusion": false,
   "elements": [
     {
       "from": [
@@ -1102,7 +1103,8 @@
           ],
           "texture": "#1"
         }
-      }
+      },
+      "name": "pointer_hour"
     },
     {
       "from": [
@@ -1179,9 +1181,11 @@
           ],
           "texture": "#1"
         }
-      }
+      },
+      "name": "pointer_minute"
     },
     {
+      "name": "pointers_center",
       "from": [
         7.75,
         10.75,
@@ -1825,6 +1829,7 @@
         8,
         8
       ],
+      "scope": 0,
       "color": 0,
       "children": [
         {
@@ -1834,6 +1839,7 @@
             8,
             8
           ],
+          "scope": 0,
           "color": 0,
           "children": [
             0,
@@ -1858,6 +1864,7 @@
             8,
             8
           ],
+          "scope": 0,
           "color": 0,
           "children": [
             {
@@ -1867,6 +1874,7 @@
                 8,
                 8
               ],
+              "scope": 0,
               "color": 0,
               "children": [
                 13,
@@ -1881,6 +1889,7 @@
                 8,
                 8
               ],
+              "scope": 0,
               "color": 0,
               "children": [
                 16,
@@ -1899,6 +1908,7 @@
             8,
             8
           ],
+          "scope": 0,
           "color": 0,
           "children": [
             21,

@@ -18,7 +18,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class KitchenWallCabinetBlock extends Block {
+public class KitchenWallCabinetBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public KitchenWallCabinetBlock(BlockBehaviour.Properties properties) {

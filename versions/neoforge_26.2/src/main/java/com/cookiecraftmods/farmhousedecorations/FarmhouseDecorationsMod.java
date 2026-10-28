@@ -14,6 +14,7 @@ public final class FarmhouseDecorationsMod {
     public FarmhouseDecorationsMod(IEventBus modBus) {
         FarmhouseDecorationsModSounds.REGISTRY.register(modBus);
         FarmhouseDecorationsModBlocks.REGISTRY.register(modBus);
+        com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.REGISTRY.register(modBus);
         FarmhouseDecorationsModItems.REGISTRY.register(modBus);
         FarmhouseDecorationsModTabs.REGISTRY.register(modBus);
     }

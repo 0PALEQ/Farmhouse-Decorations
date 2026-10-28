@@ -19,7 +19,7 @@ import net.minecraft.core.BlockPos;
 
 import com.google.common.collect.ImmutableMap;
 
-public class SeasoningRackBlock extends Block {
+public class SeasoningRackBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 

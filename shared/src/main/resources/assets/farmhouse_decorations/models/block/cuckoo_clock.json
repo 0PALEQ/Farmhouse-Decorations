@@ -1,5 +1,5 @@
 {
-  "parent": "farmhouse_decorations:custom/cuckoo-clock",
+  "parent": "farmhouse_decorations:custom/cuckoo-clock-body",
   "textures": {
     "all": "farmhouse_decorations:block/cuckoo-clock-texture",
     "particle": "farmhouse_decorations:block/cuckoo-clock-texture",

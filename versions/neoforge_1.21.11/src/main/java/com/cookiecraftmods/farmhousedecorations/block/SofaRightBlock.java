@@ -20,12 +20,12 @@ import net.minecraft.core.BlockPos;
 
 import java.util.function.Function;
 
-public class SofaRightBlock extends SeatBlock {
+public class SofaRightBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public SofaRightBlock(BlockBehaviour.Properties properties) {
-	super(properties.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM), 2.0D / 16.0D);
+	super(properties.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.BASEDRUM));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

@@ -19,7 +19,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class SmallBathroomMirrorBlock extends Block {
+public class SmallBathroomMirrorBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public SmallBathroomMirrorBlock() {

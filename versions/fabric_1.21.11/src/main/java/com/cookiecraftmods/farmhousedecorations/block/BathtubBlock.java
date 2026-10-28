@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 import java.util.function.Function;
 
-public class BathtubBlock extends Block {
+public class BathtubBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 

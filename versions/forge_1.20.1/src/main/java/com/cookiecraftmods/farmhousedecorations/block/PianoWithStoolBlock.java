@@ -29,7 +29,7 @@ import net.minecraft.core.BlockPos;
 
 import com.cookiecraftmods.farmhousedecorations.procedures.PianoRightClickedProcedure;
 
-public class PianoWithStoolBlock extends Block {
+public class PianoWithStoolBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public PianoWithStoolBlock() {

@@ -9,6 +9,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 public final class FarmhouseDecorationsClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
+        net.minecraft.client.renderer.blockentity.BlockEntityRenderers.register(com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.CUCKOO_CLOCK, com.cookiecraftmods.farmhousedecorations.client.clock.CuckooClockRenderer::new);
 		BuiltInRegistries.BLOCK.stream()
 				.filter(block -> FarmhouseDecorationsMod.MODID.equals(BuiltInRegistries.BLOCK.getKey(block).getNamespace()))
 				.forEach(block -> BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout()));

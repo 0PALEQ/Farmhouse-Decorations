@@ -29,7 +29,7 @@ import net.minecraft.core.BlockPos;
 
 import com.cookiecraftmods.farmhousedecorations.procedures.AcousticGuitarOnBlockRightClickedProcedure;
 
-public class AcousticGuitarBlock extends Block {
+public class AcousticGuitarBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public AcousticGuitarBlock() {

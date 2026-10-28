@@ -1,5 +1,5 @@
 {
-  "parent": "farmhouse_decorations:block/cuckoo_clock",
+  "parent": "farmhouse_decorations:custom/cuckoo-clock",
   "display": {
     "thirdperson": {
       "rotation": [
@@ -18,5 +18,11 @@
         0.375
       ]
     }
+  },
+  "textures": {
+    "all": "farmhouse_decorations:block/cuckoo-clock-texture",
+    "particle": "farmhouse_decorations:block/cuckoo-clock-texture",
+    "0": "farmhouse_decorations:block/smooth-farmhouse-wood",
+    "1": "farmhouse_decorations:block/cuckoo-clock-texture"
   }
 }

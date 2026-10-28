@@ -19,7 +19,7 @@ import net.minecraft.core.BlockPos;
 
 import com.google.common.collect.ImmutableMap;
 
-public class PhoneBlock extends Block {
+public class PhoneBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 

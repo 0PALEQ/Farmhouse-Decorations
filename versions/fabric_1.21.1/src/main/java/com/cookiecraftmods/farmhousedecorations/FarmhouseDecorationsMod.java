@@ -21,6 +21,7 @@ public class FarmhouseDecorationsMod implements net.fabricmc.api.ModInitializer 
 	public void onInitialize() {
 		FarmhouseDecorationsModSounds.init();
 		FarmhouseDecorationsModBlocks.init();
+        com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModBlockEntities.init();
 		FarmhouseDecorationsModItems.init();
 		FarmhouseDecorationsModTabs.init();
 		ServerTickEvents.END_SERVER_TICK.register(server -> tick());

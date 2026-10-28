@@ -17,7 +17,7 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class AncientTVWithLegsBlock extends Block {
+public class AncientTVWithLegsBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public AncientTVWithLegsBlock(BlockBehaviour.Properties properties) {

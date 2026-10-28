@@ -18,6 +18,7 @@ if (!modVersion || !mavenGroup || !archivesBaseName) {
 
 version = modVersion
 group = mavenGroup
+ext.eqlib_version = rootProperties.getProperty('eqlib_version')
 
 base {
     archivesName = archivesBaseName
@@ -25,6 +26,7 @@ base {
 
 sourceSets {
     main {
+        java.srcDir file('../../shared/src/main/java')
         resources {
             srcDir file('../../shared/src/main/resources')
 

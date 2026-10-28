@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 import com.google.common.collect.ImmutableMap;
 
-public class CoatHangerBlock extends Block {
+public class CoatHangerBlock extends FurnitureBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	private final ImmutableMap<BlockState, VoxelShape> shapes = this.makeShapes();
 

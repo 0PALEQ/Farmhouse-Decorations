@@ -27,7 +27,7 @@ import java.util.function.Function;
 import com.cookiecraftmods.farmhousedecorations.init.FarmhouseDecorationsModSounds;
 import com.cookiecraftmods.farmhousedecorations.SoundInteractions;
 
-public class PianoWithStoolBlock extends Block {
+public class PianoWithStoolBlock extends FurnitureBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 

@@ -79,8 +79,16 @@ import com.cookiecraftmods.farmhousedecorations.block.AcousticGuitarBlock;
 import com.cookiecraftmods.farmhousedecorations.FarmhouseDecorationsMod;
 
 public class FarmhouseDecorationsModBlocks {
+    static {
+        com.cookiecraftmods.eqlib.api.FurnitureApi.register(
+                "com.cookiecraftmods.farmhousedecorations.block.",
+                () -> FarmhouseDecorationsModBlocks.FURNITURE_PART.get(), state -> state.is(net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.BLOCK, new net.minecraft.resources.ResourceLocation("farmhouse_decorations", "sittable"))),
+                state -> net.minecraft.world.phys.Vec3.ZERO, (a, ap, b, bp) -> false);
+    }
+
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, FarmhouseDecorationsMod.MODID);
-	public static final RegistryObject<Block> LIQUOR_CABINET = REGISTRY.register("liquor_cabinet", () -> new LiquorCabinetBlock());
+	public static final net.minecraftforge.registries.RegistryObject<Block> FURNITURE_PART = REGISTRY.register("furniture_part", () -> new com.cookiecraftmods.eqlib.block.FurniturePartBlock(net.minecraft.world.level.block.state.BlockBehaviour.Properties.of()));
+    public static final RegistryObject<Block> LIQUOR_CABINET = REGISTRY.register("liquor_cabinet", () -> new LiquorCabinetBlock());
 	public static final RegistryObject<Block> KEROSENE_LANTERN = REGISTRY.register("kerosene_lantern", () -> new KeroseneLanternBlock());
 	public static final RegistryObject<Block> ACOUSTIC_GUITAR = REGISTRY.register("acoustic_guitar", () -> new AcousticGuitarBlock());
 	public static final RegistryObject<Block> DOUBLE_BED = REGISTRY.register("double_bed", () -> new DoubleBedBlock());
@@ -168,4 +176,12 @@ public class FarmhouseDecorationsModBlocks {
 	public static final RegistryObject<Block> WINDOW_BLINDS_LONG = REGISTRY.register("window_blinds_long", () -> new WindowBlindsLongBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+
+    static {
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(DINING_CHAIR, 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(ROCKING_CHAIR, 7.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_LEFT, 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_MIDDLE, 2.0);
+        com.cookiecraftmods.eqlib.block.SeatBlock.setSeatHeightPixels(SOFA_RIGHT, 2.0);
+    }
 }
